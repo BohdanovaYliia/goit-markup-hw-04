@@ -14,7 +14,7 @@
   --contacts-footer-color: rgba(255, 255, 255, 0.6);
   --secondary-bg-color: #2f303a;
   --other-bg-color: #f5f4fa;
-  --border-color: #ececec;
+  --border-color: #eeeeee;
   --card-set-gap: 30px;
 }
 
@@ -141,9 +141,18 @@ img {
 .hero {
   padding: 200px 0;
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-color: var(--secondary-bg-color);
   letter-spacing: 0.06em;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   margin-top: 0;
@@ -252,6 +261,11 @@ img {
 
 .team-list-item {
   width: 270px;
+
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item + .team-list-item {
@@ -261,8 +275,6 @@ img {
 .team-content {
   padding-top: 30px;
   padding-bottom: 30px;
-
-  background-color: var(--primary-white-color);
 }
 
 .team-name {
@@ -279,6 +291,24 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+}
+
+/* стили клиентов Студии */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-list-item + .clients-list-item {
+  margin-left: var(--card-set-gap);
 }
 
 /* стили подвала */
@@ -341,6 +371,12 @@ img {
   justify-content: center;
 }
 
+.portfolio-button-item:hover,
+.portfolio-button-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .portfolio-button-item + .portfolio-button-item {
   margin-left: 8px;
 }
@@ -379,6 +415,12 @@ img {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+}
+
+.portfolio-card-item:hover,
+.portfolio-card-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card-content {
