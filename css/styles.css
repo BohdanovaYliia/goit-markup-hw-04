@@ -130,6 +130,7 @@ p {margin: 0;}
 .contacts-header-link {
   display: flex;
   text-align: center;
+  align-items: center;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -357,21 +358,8 @@ p {margin: 0;}
   align-items: center;
 }
 
-.clients-list-item {
-  width: 170px;
-  height: 92px;
-  
-
-  border: 1px solid var(--icon-color-standart);
-  border-radius: 4px;
-}
 .clients-list-item + .clients-list-item {
   margin-left: var(--card-set-gap);
-}
-
-.clients-list-item:hover,
-.clients-list-item:focus {
-  border: 1px solid var(--accent-color)
 }
 
 .clients-list-link {
@@ -382,26 +370,26 @@ p {margin: 0;}
   width: 170px;
   height: 92px;
   fill: var(--icon-color-standart);
+  border: 1px solid var(--icon-color-standart);
+  border-radius: 4px;
 }
 
 .clients-list-link:hover,
 .clients-list-link:focus {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
-
 
 /* стили подвала */
 .page-footer {
   background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-blocks {
   display: flex;
-}
-
-.footer-block-contacts {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -449,8 +437,7 @@ p {margin: 0;}
   color: var(--accent-color);
 }
 
-.footer-block-networks {
-  margin-top: 72px;
+.footer-networks {
   margin-left: 70px;
 
   color: var(--primary-white-color);
@@ -514,8 +501,13 @@ p {margin: 0;}
   margin-top: var(--card-set-gap);
 }
 
-.portfolio-card-item:hover,
-.portfolio-card-item:focus {
+.portfolio-card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -549,6 +541,7 @@ p {margin: 0;}
   margin-top: 0;
   margin-bottom: 0;
 
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
