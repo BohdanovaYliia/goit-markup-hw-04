@@ -471,6 +471,7 @@ p {margin: 0;}
   min-width: 73px;
   text-align: center;
   border: none;
+  cursor: pointer;
 
   background-color: var(--other-bg-color);
   color: var(--title-text-color);
